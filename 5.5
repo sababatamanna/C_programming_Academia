@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int units;
+    float charges;
+    scanf("%d",&units);
+    if(units>0 && units<=200)
+        charges= 0.5*units;
+    else if(units>=201 && units<=400)
+    {
+        charges= 100+ .65*(units-200);
+    }
+    else if(units>=401 && units<=600)
+    {
+        charges= 230+ 0.8*(units-400);
+    }
+    else {
+        charges=390+(units-600);
+    }
+    printf("Charges = %.2f",charges);
+}
