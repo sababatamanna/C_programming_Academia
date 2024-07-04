@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float num;
+    int integral_part;
+    int rightmost_digit;
+
+    // Read the float number
+    printf("Enter a float number: ");
+    scanf("%f", &num);
+
+    // Extract the integral part
+    integral_part = (int)num;
+
+    // Find the rightmost digit of the integral part
+    rightmost_digit = abs(integral_part) % 100;
+
+    // Display the rightmost digit
+    printf("The rightmost digit of the integral part is: %d\n", rightmost_digit);
+
+    return 0;
+}
