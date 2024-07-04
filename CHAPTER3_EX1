@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int x, y, z, temp;
+
+    // Assign values to x, y, z (for example)
+    x = 1;
+    y = 2;
+    z = 3;
+
+    // Print initial values
+    printf("Before rotation:\n");
+    printf("x = %d, y = %d, z = %d\n", x, y, z);
+
+    // Rotate values
+    temp = x;
+    x = y;
+    y = z;
+    z = temp;
+
+    // Print values after rotation
+    printf("After rotation:\n");
+    printf("x = %d, y = %d, z = %d\n", x, y, z);
+
+    return 0;
+}
